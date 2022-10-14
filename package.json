@@ -1,0 +1,29 @@
+{
+  "name": "MovePOS",
+  "version": "1.0.0",
+  "description": "Move Point of Sales",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --no-asar --icon=icons/logo.icns --prune=true --out=release-builds",
+    "package-win": "electron-packager . MovePos --overwrite --platform=win32 --arch=ia32 --icon=icons/logo.ico --out=dist --version-string.ProductName=\"MovePOS\"",
+    "package-linux": "electron-packager . MovePos --overwrite --no-asar --platform=linux --arch=x64 --icon=icons/logo.png --prune=true --out=release-builds",
+    "build": "electron-packager . MovePos --icon=icons/logo.ico --out=dist --overwrite"
+  },
+  "repository": "https://github.com/AJ-TechSoul/ELECTRON-4-PHP",
+  "keywords": [
+    "Electron",
+    "php",
+    "techsoul"
+  ],
+  "author": "Satria Bagus",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^6.1.12",
+    "electron-packager": "^16.0.0"
+  },
+  "dependencies": {
+    "node-php-server": "^0.1.2",
+    "php-server-manager": "^1.2.1"
+  }
+}
